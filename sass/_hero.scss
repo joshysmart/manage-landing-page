@@ -1,7 +1,6 @@
 .hero {
  @include flex-it(column-reverse);
  padding-bottom: 6rem;
- // position: relative;
  
  .intro {
   text-align: center;
@@ -43,7 +42,6 @@
   right: 0;
   background-image: url("../images/bg-tablet-pattern.svg");
   background-size: 80%;
-  // background-position: 255px 415px;
   background-position: 235px 14.5%;
   background-repeat: no-repeat;
   z-index: -1;

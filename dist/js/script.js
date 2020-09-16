@@ -40,22 +40,21 @@ function toggleNav() {
  ul.classList.toggle('show-ul');
  menu.classList.toggle('open');
  closeMenu.classList.toggle('close-menu');
- console.log("heya");
 }
 
 function replaceUI(form) {
  form.addEventListener('invalid', (e) => {
-  const invalidFields = form.querySelectorAll( ":invalid" )
+  e.preventDefault();
+  const invalidFields = form.querySelectorAll( ":invalid" );
   invalidFields.forEach(field => {
    field.nextElementSibling.textContent = "please enter a valid email";
-   field.style.color = "#f25f3a"
+   field.style.color = "#f25f3a";
 
    field.addEventListener("focus", () => {
-    field.style.color = "#1d1e25"
+    field.style.color = "#1d1e25";
    field.nextElementSibling.textContent = "";
-   })
-  })
-  e.preventDefault();
+   });
+  });
  }, true);
 }
 
@@ -63,7 +62,3 @@ users.forEach(user => user.addEventListener('touchend', slide));
 dots.forEach(dot => dot.addEventListener('click', skipTo));
 menu.addEventListener('click', toggleNav);
 form.forEach(form => replaceUI(form));
-// form.forEach(form => form.addEventListener('submit', replaceUI));
-// submitButton.addEventListener('click', replaceUI);
-// form.oninvalid
-// onsubmit

@@ -5,20 +5,17 @@
  padding-bottom: 6rem;
  position: relative;
  z-index: 1;
-
  h2 {
   color: #fff;
   font-size: 2.5rem;
   line-height: 3rem;
  }
-
  .btn {
   @include button;
   background: #fff;
   color: $Bright-Red;
   font-weight: 700;
  }
-
 
  &:before {
   position: absolute;

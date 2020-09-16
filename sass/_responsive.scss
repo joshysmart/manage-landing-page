@@ -14,8 +14,7 @@
     position: static;
     padding: 0 0;
     margin: 0;
-    background: transparent;
- 
+    background: transparent; 
     li {
      padding: 0 .5rem;
      margin-bottom: 6px;
@@ -65,13 +64,11 @@
     margin: 0 0;
     margin-bottom: 2rem;
    }
-   
    p {
     width: 90%;
     font-size: .9rem;
     letter-spacing: .6px;
    }
- 
    .btn {
     @include button;
     margin-top: 1rem;
@@ -101,13 +98,11 @@
    width: 50%;
    padding: 0 0;
    text-align: left;
-
    h2 {
     font-size: 1.4rem;
     line-height: 1.8rem;
     margin-top: 0;
    }
-   
    p {
     width: 90%;
     font-size: .9rem;
@@ -149,12 +144,10 @@
  .testimonials {
   padding: 1rem 0;
   padding-bottom: 5rem;
-
   h2 {
    font-size: 1.6rem;
    margin-top: 0;
   }
-  
   .users {
    width: 100%;
    margin: 0;
@@ -202,13 +195,11 @@
   @include flex-it(row);
   padding: 2rem 3rem;
   text-align: left;
- 
   h2 {
    font-size: 2.2rem;
    width: 50%;
    margin-bottom: 2rem;
   } 
- 
   &:before {
    background-size: 40%;
    background-position: 25% -45%;
@@ -250,7 +241,6 @@
    &__nav-links {
     margin: 0 0;
    }
- 
    p {
     padding: 0;
     font-size: .8rem;
@@ -350,7 +340,6 @@
     width: 60%;
     font-size: 1rem;
    } 
-
    .btn {
     @include button;
    }
@@ -444,7 +433,6 @@
 
  .simplify {
   padding: 2rem 10rem;
- 
   h2 {
    font-size: 2.5rem;
    margin-bottom: 2.5rem;
