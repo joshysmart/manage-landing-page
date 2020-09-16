@@ -1,0 +1,58 @@
+.more-info {
+ width: 100%;
+ 
+ &__info {
+  padding: 0 2rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  h2 {
+   color: $Dark-Blue;
+   font-size: 1.9rem;
+   line-height: 2.8rem;
+   margin-top: 0;
+  }
+  
+  p {
+   font-size: .9rem;
+  }
+ }
+ 
+ &__list {
+  
+  .list-item {
+   @include flex-it(row);
+   padding-left: 1rem;
+   margin-bottom: 2rem;
+   
+   &__number {
+    padding: .3rem 1.4rem;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 1.3rem;
+    background: $Bright-Red;
+    align-self: start;
+    z-index: 1;
+   }
+
+   &__text{
+    h3 {
+     margin: 0;
+     margin-left: -2rem;
+     padding: .3rem 0;
+     padding-left: 3rem;
+     font-size: 1rem;
+     color: $Dark-Blue;
+     background: $Very-Pale-Red;
+     z-index: -1;
+    }
+    
+    p {
+     margin: .5rem 0;
+     margin-left: -3.8rem;
+     font-size: .9rem;
+     padding-right: 1rem;
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,81 @@
+.testimonials {
+ text-align: center;
+ padding: 1rem 1.5rem;
+ padding-bottom: 3rem;
+
+ h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $Dark-Blue;
+ }
+
+ .users {
+  padding: 11rem 0;
+  position: relative;
+
+  &__user {
+   padding: 2rem 1rem;
+   padding-top: 2.8rem;
+   background: #fafafa;
+   margin-bottom: 1.5rem;
+   position: absolute;
+   top: 5rem;
+   opacity: 0;
+   z-index: -1;
+   transition: all .4s ease-in;
+
+   .avatar {
+    position: absolute;
+    width: 4.5rem;
+    top: -2rem;
+    left: 38%;
+   }
+
+   .name {
+    color: $Dark-Blue;
+    font-weight: 700;
+   }
+
+   .comment {
+    font-size: .9rem;
+   }
+  }
+  .display {
+   opacity: 1;
+   z-index: 1;
+   animation: swipe .4s 1;
+  }
+
+  @keyframes swipe {
+   49% { transform: translate(0px);}
+   50% { transform: translate(5rem);}
+   99% { transform: translate(0rem);}
+  }  
+ }
+
+ .slide-dots {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  
+  .dot {
+   width: 8px;
+   height: 8px;
+   margin: 2px;
+   align-items: center;
+   border: 1px solid $Bright-Red;
+   border-radius: 50%;
+   transition: all .4s ease-in;
+  }
+
+  .fill {
+   background: $Bright-Red;
+  }
+ }
+
+ .btn {
+  @include button;
+ }
+}
