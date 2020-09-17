@@ -27,4 +27,4 @@ Your users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-View my solution [here](https://manage-landing-page-swart.vercel.app/)
+View my solution [here](https://www.frontendmentor.io/solutions/manage-landing-page-using-sass-3gPioKMJh)
